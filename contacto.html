@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Programación 9°B</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #d3d3d3; color: green; font-size: 20px; margin: 0; }
+    header, nav, footer { background-color: #003366; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { padding: 2rem; }
+    form { max-width: 500px; margin: 0 auto; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 2px solid green; border-radius: 5px; font-size: 18px; }
+    button { margin-top: 1rem; background-color: green; color: white; border: none; padding: 0.7rem; font-size: 18px; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: darkgreen; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <p>Dejanos tu mensaje o sugerencia</p>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="info.html">¿Qué es Programar?</a>
+    <a href="beneficios.html">Beneficios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <div class="container">
+    <form action=\"#\" method=\"post\">
+      <label for=\"nombre\">Nombre:</label>
+      <input type=\"text\" id=\"nombre\" name=\"nombre\" required>\n\n      <label for=\"mensaje\">Mensaje:</label>
+      <textarea id=\"mensaje\" name=\"mensaje\" rows=\"5\" required></textarea>\n\n      <button type=\"submit\">Enviar</button>
+    </form>
+  </div>
+  <footer>
+    <p>© 2025 Sitio educativo sobre programación - Enzo Román Celada</p>
+  </footer>
+</body>
+</html>
