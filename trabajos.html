@@ -1,38 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Trabajos | Enzo Román Celada</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #e7d9c4, #c8b6a6);
-      color: #4b3f33;
-      font-size: 20px;
-    }
-
-    header, nav, footer {
-      backdrop-filter: blur(10px);
-      background-color: rgba(75, 63, 51, 0.1);
-      text-align: center;
-      box-shadow: 0 0 15px rgba(75, 63, 51, 0.3);
-    }
-
-    header {
-      padding: 2rem;
-      border-bottom: 1px solid #4b3f33;
-    }
-
-    nav {
-      padding: 1rem;
-    }
-
-    nav a {
-      color: #4b3f33;
-      margin: 0 1rem;
-      text-decoration: none;
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/trabajos.html b/trabajos.html
+index 60aad8ce62381fb2c01bdeaa39d96b69b92479be..d09dafa8ed07624c49aa9d74cf9845f29e31c7ec 100644
+--- a/trabajos.html
++++ b/trabajos.html
+@@ -1,35 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+   <meta charset="UTF-8" />
+   <title>Trabajos | Enzo Román Celada</title>
+-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
++  <!-- Eliminamos la fuente futurista Orbitron -->
+   <style>
+     body {
+       margin: 0;
+-      font-family: 'Orbitron', sans-serif;
++      /* Fuente estándar para una lectura más clásica */
++      font-family: Arial, sans-serif;
+       background: linear-gradient(135deg, #e7d9c4, #c8b6a6);
+       color: #4b3f33;
+       font-size: 20px;
+     }
+ 
+     header, nav, footer {
+       backdrop-filter: blur(10px);
+       background-color: rgba(75, 63, 51, 0.1);
+       text-align: center;
+       box-shadow: 0 0 15px rgba(75, 63, 51, 0.3);
+     }
+ 
+     header {
+       padding: 2rem;
+       border-bottom: 1px solid #4b3f33;
+     }
+ 
+     nav {
+       padding: 1rem;
+     }
+ 
+     nav a {
+       color: #4b3f33;
+       margin: 0 1rem;
+       text-decoration: none;
+ 
+EOF
+)
       font-weight: bold;
       transition: color 0.3s ease;
     }
