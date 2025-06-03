@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio | Enzo Román Celada</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(231,217,196,0.85), rgba(200,182,166,0.85)), url('foto5.jpg') center/cover no-repeat;
+      color: #4b3f33;
+      font-size: 20px;
+    }
+
+    header, nav, footer {
+      backdrop-filter: blur(10px);
+      background-color: rgba(75, 63, 51, 0.1);
+      text-align: center;
+      box-shadow: 0 0 15px rgba(75, 63, 51, 0.3);
+    }
+
+    header {
+      padding: 2rem;
+      border-bottom: 1px solid #4b3f33;
+    }
+
+    nav {
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #4b3f33;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #7c6651;
+    }
+
+    main {
+      padding: 3rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin: 2rem;
+      border-radius: 12px;
+    }
+
+    footer {
+      padding: 1rem;
+      font-size: 16px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .intro {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-trabajos {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #4b3f33;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .btn-trabajos:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enzo Román Celada</h1>
+    <p id="saludo">Docente del futuro — entre la Historia y el código</p>
+  </header>
+
+  
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="acerca.html">Acerca de mí</a>
+      <a href="trabajos.html">Trabajos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="streaming.html">Streaming</a>
+    </nav>
+
+
+  <main>
+    <h2>Bienvenidos a mi espacio digital</h2>
+    <p class="intro">Donde la tecnología y las humanidades se encuentran bajo una misma visión pedagógica.</p>
+    <a href="trabajos.html" class="btn-trabajos">🔍 Ver mis trabajos</a>
+  </main>
+
+  <footer>
+    © Prof. Enzo Román - Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const frases = [
+      "Docente del futuro — entre la Historia y el código",
+      "Pasión por enseñar, crear y transformar",
+      "Tecnología + Humanismo = Educación integral"
+    ];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById('saludo').innerText = frases[i];
+      i = (i + 1) % frases.length;
+    }, 4000);
+  </script>
+
+</body>
+</html>
